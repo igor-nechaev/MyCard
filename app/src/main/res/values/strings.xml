@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MyCard</string>
+    <string name="eur_label">€</string>
+    <string name="eur_text">eur</string>
+    <string name="tools_card_number">4455 1223 3488 1000</string>
+    <string name="valid_thru">valid thru</string>
+    <string name="tools_person_name">Igor Nechaev</string>
+    <string name="tools_balance">£2 125,12</string>
+    <string name="change_currency">Change currency</string>
+    <string name="history">History</string>
+</resources>

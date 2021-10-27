@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_valute"
+    app:cardCornerRadius="16dp"
+    style="@style/card_card">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/group_item_card_valid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="tv_item_card_valid_static,tv_item_card_valid_date"
+            />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/group_item_card_short_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="tv_item_card_text_balance_static,tv_item_card_balance_short" />
+
+        <TextView
+            android:id="@+id/tv_item_card_numer_card"
+            style="@style/tv_item_card_number_card"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/view_card_icon"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/tools_card_number" />
+
+        <View
+            android:id="@+id/view_card_icon"
+            style="@style/view_card_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:background="@drawable/ic_mastercard_icon" />
+
+        <View
+            android:id="@+id/view_person_cion"
+            app:layout_constraintStart_toStartOf="@+id/view_card_icon"
+            app:layout_constraintTop_toBottomOf="@+id/view_card_icon"
+            tools:background="@drawable/ic_person_icon"
+            style="@style/view_person_icon" />
+
+        <TextView
+            android:id="@+id/tv_item_card_person_name"
+            app:layout_constraintEnd_toStartOf="@+id/tv_item_card_valid_date"
+            app:layout_constraintStart_toEndOf="@+id/view_card_icon"
+            app:layout_constraintTop_toBottomOf="@+id/tv_item_card_numer_card"
+            tools:ignore="TextContrastCheck"
+            tools:text="@string/tools_person_name"
+            style="@style/tv_item_card_person_name" />
+
+        <TextView
+            android:id="@+id/tv_item_card_valid_static"
+            android:text="@string/valid_thru"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_item_card_numer_card"
+            tools:ignore="TextContrastCheck,TextContrastCheck"
+            style="@style/tv_item_card_valid_static" />
+
+        <TextView
+            android:id="@+id/tv_item_card_valid_date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_item_card_valid_static"
+            tools:ignore="TextContrastCheck"
+            tools:text="12/22"
+            style="@style/tv_item_card_valid_date" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/item_card_guideline_name_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="258dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/item_card_guideline_name_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="66dp" />
+
+        <TextView
+            android:id="@+id/tv_item_card_balance_huge"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_item_card_text_balance_static"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="@string/tools_balance"
+            style="@style/tv_item_card_balance_huge" />
+
+        <TextView
+            android:id="@+id/tv_item_card_text_balance_static"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_item_card_valid_date"
+            tools:ignore="TextContrastCheck"
+            tools:text="Your balance"
+            style="@style/tv_item_card_text_balance_static" />
+
+        <TextView
+            android:id="@+id/tv_item_card_balance_short"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_item_card_text_balance_static"
+            tools:text="@string/tools_balance"
+            style="@style/tv_item_card_balance_short" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
+
+
+

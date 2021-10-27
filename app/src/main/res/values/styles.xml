@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="card_valute">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:elevation">16dp</item>
+        <item name="cardCornerRadius">16dp</item>
+    </style>
+
+    <style name="item_valute_label">
+        <item name="android:layout_width">18dp</item>
+        <item name="android:layout_height">38dp</item>
+        <item name="android:layout_marginTop">17dp</item>
+        <item name="android:gravity">top</item>
+        <item name="android:lineSpacingExtra">3sp</item>
+        <item name="android:textColor">@color/item_valute_unfocus_text_color</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:translationY">-1.42sp</item>
+    </style>
+
+    <style name="item_valute_text_description">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:lineSpacingExtra">5sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/item_valute_unfocus_text_color</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:translationY">-2.62sp</item>
+    </style>
+
+    <style name="tv_item_card_number_card">
+        <item name="android:layout_width">217dp</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:layout_marginStart">18dp</item>
+        <item name="android:layout_marginTop">28dp</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:gravity">top</item>
+    </style>
+
+    <style name="view_card_icon">
+        <item name="android:layout_width">39dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:layout_marginStart">22dp</item>
+        <item name="android:layout_marginTop">32dp</item>
+    </style>
+
+    <style name="card_card">
+        <item name="android:layout_height">225dp</item>
+        <item name="android:layout_width">328dp</item>
+        <item name="android:elevation">16dp</item>
+    </style>
+
+    <style name="view_person_icon">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_marginTop">33dp</item>
+    </style>
+
+    <style name="tv_item_card_person_name">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginTop">32dp</item>
+        <item name="android:gravity">top</item>
+        <item name="android:textColor">@color/tv_card_user_name_color</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="tv_item_card_valid_static">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">16dp</item>
+        <item name="android:layout_marginTop">24dp</item>
+        <item name="android:layout_marginEnd">22dp</item>
+        <item name="android:gravity">top</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/tv_card_user_name_color</item>
+        <item name="android:textSize">8sp</item>
+    </style>
+
+    <style name="tv_item_card_valid_date">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:layout_marginEnd">22dp</item>
+        <item name="android:gravity">top</item>
+        <item name="android:textColor">@color/tv_card_valid_info_color</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="tv_item_card_balance_huge">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">22dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:layout_marginBottom">37dp</item>
+        <item name="android:gravity">top</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:textSize">28sp</item>
+    </style>
+
+    <style name="tv_item_card_text_balance_static">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">21dp</item>
+        <item name="android:layout_marginTop">21dp</item>
+        <item name="android:layout_marginEnd">22dp</item>
+        <item name="android:textColor">@color/tv_card_valid_info_color</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="tv_item_card_balance_short">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">26dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginEnd">22dp</item>
+        <item name="android:gravity">top</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="item_history_card">
+        <item name="android:layout_width">44dp</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+    </style>
+
+    <style name="item_history_icon">
+        <item name="android:layout_width">17dp</item>
+        <item name="android:layout_height">29dp</item>
+        <item name="android:layout_marginStart">14dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginEnd">13dp</item>
+        <item name="android:layout_marginBottom">7dp</item>
+    </style>
+
+    <style name="tv_item_history_company_name">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:layout_marginStart">17dp</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:gravity">top</item>
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="tv_item_history_date">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">19dp</item>
+        <item name="android:layout_marginStart">17dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="tv_item_history_cost_value_converted">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/text_black</item>
+    </style>
+
+    <style name="tv_item_history_converted_valute">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_marginEnd">2dp</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="tv_item_history_cost">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="item_history_cl">
+        <item name="android:layout_width">284dp</item>
+        <item name="android:layout_height">52dp</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+
+
+</resources>
