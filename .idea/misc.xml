@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/necha/AndroidStudioProjects/MyCard/app/src/main/res/drawable/btn_main_selector.xml" value="0.23544433094994893" />
+        <entry key="..\:/Users/necha/AndroidStudioProjects/MyCard/app/src/main/res/drawable/ic_group.xml" value="0.21666666666666667" />
         <entry key="..\:/Users/necha/AndroidStudioProjects/MyCard/app/src/main/res/drawable/ic_launcher_background.xml" value="0.23544433094994893" />
         <entry key="..\:/Users/necha/AndroidStudioProjects/MyCard/app/src/main/res/drawable/ic_mastercard_icon.xml" value="0.2390194075587334" />
         <entry key="..\:/Users/necha/AndroidStudioProjects/MyCard/app/src/main/res/drawable/ic_netflix_icon.xml" value="0.24375" />
@@ -14,6 +15,7 @@
         <entry key="..\:/Users/necha/AndroidStudioProjects/MyCard/app/src/main/res/layout/ff.xml" value="0.21105072463768115" />
         <entry key="..\:/Users/necha/AndroidStudioProjects/MyCard/app/src/main/res/layout/item_card.xml" value="0.4" />
         <entry key="..\:/Users/necha/AndroidStudioProjects/MyCard/app/src/main/res/layout/item_history.xml" value="0.4" />
+        <entry key="..\:/Users/necha/AndroidStudioProjects/MyCard/app/src/main/res/layout/item_transaction.xml" value="0.4" />
         <entry key="..\:/Users/necha/AndroidStudioProjects/MyCard/app/src/main/res/layout/item_valute.xml" value="0.264" />
         <entry key="..\:/Users/necha/AndroidStudioProjects/MyCard/app/src/main/res/layout/main_fragment.xml" value="0.264" />
         <entry key="..\:/Users/necha/AndroidStudioProjects/MyCard/app/src/main/res/layout/tv_item_card_numer_card.xml" value="0.2234375" />

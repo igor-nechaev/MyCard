@@ -8,4 +8,10 @@
     <string name="tools_balance">£2 125,12</string>
     <string name="change_currency">Change currency</string>
     <string name="history">History</string>
+    <string name="netflix">Netflix</string>
+    <string name="_15_12_2019">15/12/2019</string>
+    <string name="_9_85">9.85</string>
+    <string name="_7_99">7.99</string>
+    <string name="minus_gbr">- £</string>
+    <string name="dollar">$</string>
 </resources>
