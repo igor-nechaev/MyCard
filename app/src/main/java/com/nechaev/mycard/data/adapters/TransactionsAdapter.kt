@@ -1,4 +1,4 @@
-package com.nechaev.mycard.ui.mainScreen.rvTransaction
+package com.nechaev.mycard.data.adapters
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -9,7 +9,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.nechaev.mycard.R
-import com.nechaev.mycard.data.model.user.Transaction
+import com.nechaev.mycard.data.content.cardHolder.Transaction
 
 class TransactionsAdapter(private val context : Context, var transactions : List<Transaction>)
     : RecyclerView.Adapter<TransactionsAdapter.HistoryViewHolder>() {

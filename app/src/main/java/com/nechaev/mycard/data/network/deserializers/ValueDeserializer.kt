@@ -1,11 +1,11 @@
-package com.nechaev.mycard.data.model.deserializers
+package com.nechaev.mycard.data.network.deserializers
 
 import com.google.gson.Gson
 import com.google.gson.JsonDeserializationContext
 import com.google.gson.JsonDeserializer
 import com.google.gson.JsonElement
-import com.nechaev.mycard.data.model.value.ValueInfo
-import com.nechaev.mycard.data.model.value.ValueRoot
+import com.nechaev.mycard.data.content.value.ValueInfo
+import com.nechaev.mycard.data.content.value.ValueRoot
 import java.lang.reflect.Type
 
 class ValueDeserializer : JsonDeserializer<ValueRoot> {

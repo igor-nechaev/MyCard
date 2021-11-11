@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-
-<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/item_valute"
     app:cardCornerRadius="16dp"
     style="@style/card_card">
@@ -31,12 +31,12 @@
             style="@style/tv_item_card_number_card"
             android:layout_marginEnd="32dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/view_card_icon"
+            app:layout_constraintStart_toEndOf="@+id/iv_card_icon"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="@string/tools_card_number" />
 
-        <View
-            android:id="@+id/view_card_icon"
+        <ImageView
+            android:id="@+id/iv_card_icon"
             style="@style/view_card_icon"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -44,15 +44,15 @@
 
         <View
             android:id="@+id/view_person_cion"
-            app:layout_constraintStart_toStartOf="@+id/view_card_icon"
-            app:layout_constraintTop_toBottomOf="@+id/view_card_icon"
-            tools:background="@drawable/ic_person_icon"
+            app:layout_constraintStart_toStartOf="@+id/iv_card_icon"
+            app:layout_constraintTop_toBottomOf="@+id/iv_card_icon"
+            android:background="@drawable/ic_person_icon"
             style="@style/view_person_icon" />
 
         <TextView
             android:id="@+id/tv_item_card_person_name"
             app:layout_constraintEnd_toStartOf="@+id/tv_item_card_valid_date"
-            app:layout_constraintStart_toEndOf="@+id/view_card_icon"
+            app:layout_constraintStart_toEndOf="@+id/iv_card_icon"
             app:layout_constraintTop_toBottomOf="@+id/tv_item_card_numer_card"
             tools:ignore="TextContrastCheck"
             tools:text="@string/tools_person_name"
@@ -90,30 +90,29 @@
 
         <TextView
             android:id="@+id/tv_item_card_balance_huge"
+            style="@style/tv_item_card_balance_huge"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/tv_item_card_text_balance_static"
+            app:layout_constraintHorizontal_bias="0.533"
             app:layout_constraintStart_toStartOf="parent"
-            tools:text="@string/tools_balance"
-            style="@style/tv_item_card_balance_huge" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_item_card_person_name"
+            tools:text="@string/tools_balance" />
 
         <TextView
             android:id="@+id/tv_item_card_text_balance_static"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_item_card_valid_date"
             tools:ignore="TextContrastCheck"
-            tools:text="Your balance"
+            android:text="@string/your_balance"
             style="@style/tv_item_card_text_balance_static" />
 
         <TextView
             android:id="@+id/tv_item_card_balance_short"
+            style="@style/tv_item_card_balance_short"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_item_card_text_balance_static"
-            tools:text="@string/tools_balance"
-            style="@style/tv_item_card_balance_short" />
+            tools:text="@string/tools_balance" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </com.google.android.material.card.MaterialCardView>
-
-
-

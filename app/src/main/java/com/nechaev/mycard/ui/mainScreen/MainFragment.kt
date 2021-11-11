@@ -1,25 +1,31 @@
 package com.nechaev.mycard.ui.mainScreen
 
-import androidx.lifecycle.ViewModelProvider
+import android.annotation.SuppressLint
 import android.os.Bundle
-import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.ProgressBar
 import android.widget.TextView
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
 import com.nechaev.mycard.R
-import com.nechaev.mycard.data.model.user.UserList
-import com.nechaev.mycard.data.network.user.RetrofitUser
-import com.nechaev.mycard.data.network.user.UsersService
-import retrofit2.Response
-import retrofit2.Call
+import com.nechaev.mycard.data.content.cardHolder.CardHolder
+import com.nechaev.mycard.data.network.Status
+import com.nechaev.mycard.data.content.cardHolder.ResourceCardHolders
 
 
-class MainFragment : Fragment(){
+class MainFragment : Fragment(), Observer<ResourceCardHolders> {
     lateinit var tv_holder : TextView
     lateinit var tv_num: TextView
-    lateinit var api : UsersService
+    lateinit var tv_card_valid: TextView
+    lateinit var tv_balance_orig_valute: TextView
+    lateinit var tv_balance_converted_valute: TextView
+    lateinit var iv_card_icon: ImageView
+    lateinit var viewModel: MainViewModel
+    lateinit var progressBar: ProgressBar
 
     companion object {
 
@@ -33,10 +39,8 @@ class MainFragment : Fragment(){
             return MainFragment()
         }
 
-        const val LOG_TAG = "MainFragmentDebug"
     }
 
-    private lateinit var viewModel: MainViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -46,35 +50,59 @@ class MainFragment : Fragment(){
 
         tv_holder = view.findViewById(R.id.tv_item_card_person_name)
         tv_num = view.findViewById(R.id.tv_item_card_numer_card)
+        tv_card_valid = view.findViewById(R.id.tv_item_card_valid_date)
+        tv_balance_orig_valute = view.findViewById(R.id.tv_item_card_balance_short)
+        tv_balance_converted_valute = view.findViewById(R.id.tv_item_card_balance_huge)
+        iv_card_icon = view.findViewById(R.id.iv_card_icon)
+
+        progressBar = view.findViewById(R.id.progressBar)
+
+
+        viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
 
         return view
     }
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-       // viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
-
-    }
     override fun onStart() {
         super.onStart()
-        api = RetrofitUser.getRetrofitUsers().create(UsersService::class.java)
+        viewModel.cardHoldersResource.observe(this,this)
+    }
 
 
+    override fun onChanged(resourceCardHolders: ResourceCardHolders) {
 
-        api.getUserList().enqueue(object : retrofit2.Callback<UserList>{
+        when (resourceCardHolders.status) {
+            Status.LOADING -> showProgress()
+            Status.SUCCES -> updateCardView(resourceCardHolders.data!!.cardHolderList[0])
+            Status.ERROR -> showErrorCard()
+        }
+    }
 
-            override fun onResponse(call: Call<UserList>, response: Response<UserList>) {
-                tv_holder.text = response.body()!!.userList[0].cardHolder
-                tv_num.text = response.body()!!.userList[0].cardNumber
-            }
+    private fun showErrorCard() {
+        //TODO Error!
+    }
 
-            override fun onFailure(call: Call<UserList>, t: Throwable) {
-                Log.d(LOG_TAG, t.message.toString())
-                tv_holder.text = "Error"
-                tv_num.text = "Error"
-            }
-        })
+    private fun showProgress() {
+        progressBar.visibility = View.VISIBLE
+    }
 
+    @SuppressLint("SetTextI18n")
+    private fun updateCardView(cardHolderData: CardHolder) {
+        tv_num.text = cardHolderData.cardNumber
+        tv_holder.text = cardHolderData.cardHolder
+        tv_card_valid.text = cardHolderData.valid
+        tv_balance_orig_valute.text = "${resources.getString(R.string.dollar)} ${cardHolderData.balance}"
+        tv_balance_converted_valute.text = "${resources.getString(R.string.dollar)} ${cardHolderData.balance}"  //TODO Convert this!
+
+        when{
+            cardHolderData.type.equals("mastercard") -> iv_card_icon.setBackgroundResource(R.drawable.ic_mastercard_icon)
+        }
+
+        hideProgress()
+    }
+
+    private fun hideProgress() {
+        progressBar.visibility = View.INVISIBLE
     }
 
 }

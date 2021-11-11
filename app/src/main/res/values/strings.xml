@@ -5,7 +5,7 @@
     <string name="tools_card_number">4455 1223 3488 1000</string>
     <string name="valid_thru">valid thru</string>
     <string name="tools_person_name">Igor Nechaev</string>
-    <string name="tools_balance">£2 125,12</string>
+    <string name="tools_balance">$ 2617.14</string>
     <string name="change_currency">Change currency</string>
     <string name="history">History</string>
     <string name="netflix">Netflix</string>
@@ -14,4 +14,5 @@
     <string name="_7_99">7.99</string>
     <string name="minus_gbr">- £</string>
     <string name="dollar">$</string>
+    <string name="your_balance">Your balance</string>
 </resources>

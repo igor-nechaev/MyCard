@@ -1,11 +1,19 @@
 package com.nechaev.mycard.ui.mainScreen
 
+import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.nechaev.mycard.data.network.value.RetrofitValue
-import com.nechaev.mycard.data.network.value.ValueService
-import kotlinx.coroutines.Job
-import kotlinx.coroutines.launch
+import com.nechaev.mycard.data.network.Status
+import com.nechaev.mycard.data.repository.CardHolderRepository
+import com.nechaev.mycard.data.content.cardHolder.ResourceCardHolders
 
 class MainViewModel : ViewModel() {
-    //private var valueService : ValueService = RetrofitValue.getRetrofitValue().create(ValueService::class.java)
+    var cardHoldersResource : MutableLiveData<ResourceCardHolders> = MutableLiveData()
+    init {
+        cardHoldersResource.postValue(ResourceCardHolders(Status.LOADING, null, null))
+        loadCardHolders()
+    }
+
+    private fun loadCardHolders() {
+        CardHolderRepository.loadCardHolders(cardHoldersResource)
+    }
 }

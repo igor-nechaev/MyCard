@@ -1,4 +1,4 @@
-package com.nechaev.mycard.data.model.user
+package com.nechaev.mycard.data.content.cardHolder
 
 import com.google.gson.annotations.SerializedName
 

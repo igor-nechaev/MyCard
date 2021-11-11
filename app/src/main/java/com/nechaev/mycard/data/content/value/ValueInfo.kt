@@ -1,4 +1,4 @@
-package com.nechaev.mycard.data.model.value
+package com.nechaev.mycard.data.content.value
 
 import com.google.gson.annotations.SerializedName
 
