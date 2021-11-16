@@ -10,13 +10,20 @@
         <entry key="..\:/Users/necha/AndroidStudioProjects/MyCard/app/src/main/res/drawable/ic_netflix_icon.xml" value="0.24375" />
         <entry key="..\:/Users/necha/AndroidStudioProjects/MyCard/app/src/main/res/drawable/ic_netflix_icon_2016_1_1netflix.xml" value="0.21666666666666667" />
         <entry key="..\:/Users/necha/AndroidStudioProjects/MyCard/app/src/main/res/drawable/ic_person_icon.xml" value="0.2390194075587334" />
+        <entry key="..\:/Users/necha/AndroidStudioProjects/MyCard/app/src/main/res/drawable/ic_unionpay.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/necha/AndroidStudioProjects/MyCard/app/src/main/res/drawable/ic_visa.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/necha/AndroidStudioProjects/MyCard/app/src/main/res/drawable/visa_icon.xml" value="0.21666666666666667" />
         <entry key="..\:/Users/necha/AndroidStudioProjects/MyCard/app/src/main/res/layout/activity.xml" value="0.1986111111111111" />
         <entry key="..\:/Users/necha/AndroidStudioProjects/MyCard/app/src/main/res/layout/activity_main.xml" value="0.19701086956521738" />
+        <entry key="..\:/Users/necha/AndroidStudioProjects/MyCard/app/src/main/res/layout/dialog_no_connection.xml" value="0.264" />
         <entry key="..\:/Users/necha/AndroidStudioProjects/MyCard/app/src/main/res/layout/ff.xml" value="0.21105072463768115" />
         <entry key="..\:/Users/necha/AndroidStudioProjects/MyCard/app/src/main/res/layout/item_card.xml" value="0.6" />
-        <entry key="..\:/Users/necha/AndroidStudioProjects/MyCard/app/src/main/res/layout/item_history.xml" value="0.4" />
+        <entry key="..\:/Users/necha/AndroidStudioProjects/MyCard/app/src/main/res/layout/item_history.xml" value="0.72" />
         <entry key="..\:/Users/necha/AndroidStudioProjects/MyCard/app/src/main/res/layout/item_transaction.xml" value="0.4" />
         <entry key="..\:/Users/necha/AndroidStudioProjects/MyCard/app/src/main/res/layout/item_valute.xml" value="0.264" />
+        <entry key="..\:/Users/necha/AndroidStudioProjects/MyCard/app/src/main/res/layout/item_valute_0.xml" value="0.536" />
+        <entry key="..\:/Users/necha/AndroidStudioProjects/MyCard/app/src/main/res/layout/item_valute_1.xml" value="0.1986111111111111" />
+        <entry key="..\:/Users/necha/AndroidStudioProjects/MyCard/app/src/main/res/layout/item_valute_2.xml" value="0.264" />
         <entry key="..\:/Users/necha/AndroidStudioProjects/MyCard/app/src/main/res/layout/main_fragment.xml" value="0.264" />
         <entry key="..\:/Users/necha/AndroidStudioProjects/MyCard/app/src/main/res/layout/tv_item_card_numer_card.xml" value="0.2234375" />
       </map>

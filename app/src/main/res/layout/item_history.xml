@@ -19,14 +19,14 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <View
-                android:id="@+id/item_history_icon"
-                tools:background="@drawable/ic_netflix_icon_2016_1_1netflix"
+            <ImageView
+                android:id="@+id/item_history_iv_icon"
+                style="@style/item_history_icon"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                style="@style/item_history_icon" />
+                tools:background="@drawable/ic_netflix" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </com.google.android.material.card.MaterialCardView>

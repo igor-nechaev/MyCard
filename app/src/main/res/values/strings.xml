@@ -14,5 +14,13 @@
     <string name="_7_99">7.99</string>
     <string name="minus_gbr">- £</string>
     <string name="dollar">$</string>
+    <string name="gbp">£</string>
+    <string name="rub">₽</string>
+
     <string name="your_balance">Your balance</string>
+    <string name="gbp_description">GBP</string>
+    <string name="rub_description">RUB</string>
+    <string name="no_connection_text">Произошла ошибка при загрузке данных. Проверьте подключение к сети.</string>
+    <string name="retry">ПОВТОРИТЬ</string>
+
 </resources>

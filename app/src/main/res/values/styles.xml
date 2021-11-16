@@ -21,7 +21,7 @@
     </style>
 
     <style name="item_valute_text_description">
-        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">24dp</item>
         <item name="android:layout_marginTop">4dp</item>
         <item name="android:lineSpacingExtra">5sp</item>
@@ -168,7 +168,8 @@
     <style name="tv_item_history_converted_valute">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">30dp</item>
-        <item name="android:layout_marginEnd">2dp</item>
+        <item name="android:layout_marginEnd">4dp</item>
+        <item name="android:textColor">@color/btn_unfocus_color</item>
         <item name="android:textSize">22sp</item>
     </style>
 
@@ -176,6 +177,7 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:letterSpacing">0.01</item>
+        <item name="android:textColor">@color/btn_unfocus_color</item>
         <item name="android:textSize">14sp</item>
     </style>
 
