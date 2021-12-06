@@ -12,4 +12,5 @@ data class Transaction(
 
     @SerializedName("amount") val amount : String
 
-) {}
+) {
+}

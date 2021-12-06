@@ -4,7 +4,10 @@ import com.nechaev.mycard.model.Constants
 
 object ConvertUtils {
 
-    fun Double.format(digits: Int) = "%.${digits}f".format(this)
+    private fun Double.format(digits: Int) = "%.${digits}f".format(this)
+
+
+
 
     /**
      * Метод возвращает чилсло, на которое умножается баланс, чтобы получить баланс в "другой" валюте
@@ -16,7 +19,10 @@ object ConvertUtils {
 
         val coeff = cardCashRate / convertCashRate
 
+
+
         return coeff
+
     }
 
     fun convertBalanceString(coeff: Double, charCodeValute: String, balanceString: String): String{
