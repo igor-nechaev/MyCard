@@ -47,3 +47,11 @@
 - Graceful behavior without internet connectivity
 - Shows cached or default state before remote data arrives
 - Designed for responsive interaction even with slow data fetching
+
+## Screenshots
+![image](https://github.com/user-attachments/assets/fddfb418-0d5f-464c-b52d-cb8dddf28e04)
+![image](https://github.com/user-attachments/assets/050cd1ad-2aba-4852-bcfd-81c599697e79)
+![image](https://github.com/user-attachments/assets/e0f7a07d-a482-4388-908b-662633f0d17f)
+
+
+
